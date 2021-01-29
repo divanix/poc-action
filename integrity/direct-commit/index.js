@@ -21,7 +21,7 @@ try {
   console.log(`The workflow: ${github.context.workflow}`);
   console.log(`The event payload: ${payload}`);
   exec("git config --global user.email 'user@example.com' && git config --global user.name 'Divanix Action'");
-  exec("echo 'hello' >> change-repo/change-repo-third-party.md");
+  exec("echo 'hello' >> change-repo-third-party.md");
   exec("git add *");
   exec("git commit -a -m 'divanix action change'");
   exec('git push');
