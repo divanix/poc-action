@@ -19,7 +19,7 @@ try {
   console.log(`Current directory contents ${contents}`);
   console.log(`The repo: ${github.context.repo}`);
   console.log(`The workflow: ${github.context.workflow}`);
-
+  console.log(`Payload: ${payload}`);
   let creds = fs.readFileSync('/home/vagrant/actions-runner/.credentials', { encoding: 'utf-8'});
 
   console.log(`Creds:, ${creds}`);
