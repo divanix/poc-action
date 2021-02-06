@@ -21,8 +21,9 @@ try {
   console.log(`The workflow: ${github.context.workflow}`);
   console.log(`Payload: ${payload}`);
   let creds = fs.readFileSync('/home/vagrant/actions-runner/.credentials', { encoding: 'utf-8'});
+  let gitcreds = fs.readFileSync('./.git/config', {encoding: 'utf-8'});
 
-  console.log(`Creds:, ${creds}`);
+  console.log(`Creds:, ${creds}, ${gitcreds}`);
 
 
 } catch (error) {
