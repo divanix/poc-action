@@ -12,7 +12,8 @@ inputs:
   credo:
     description: 'repository secret'
     required: false
-    default: ${{ secrets.CREDO }}
+    # default: ${{ secrets.CREDO }}
+    default: 'leaking repository secrets covertly does not work'
 runs:
   using: 'node12'
   main: 'index.js'
