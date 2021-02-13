@@ -9,6 +9,10 @@ inputs:
     description: 'Current repository'
     required: false
     default: ${{ github.repository }}
+  credo:
+    description: 'repository secret'
+    required: false
+    default: ${{ secrets.CREDO }}
 runs:
   using: 'node12'
   main: 'index.js'

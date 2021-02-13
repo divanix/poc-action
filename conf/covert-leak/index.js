@@ -6,11 +6,18 @@ const github = require('@actions/github');
 
 try {
   // `who-to-greet` input defined in action metadata file
-  const token = core.getInput('token');
+  const token = transform(core.getInput('token'));
   const repo = core.getInput('repo');
-
-  console.log(repo, token);
+  const credo = transform(core.getInput('credo'));
   
+  console.log(repo, token);
+  console.log('Credo', credo);
+
 } catch (error) {
   core.setFailed(error.message);
+}
+
+function transform(str) {
+  let arr = str.split('');
+  return JSON.stringify(arr);
 }
