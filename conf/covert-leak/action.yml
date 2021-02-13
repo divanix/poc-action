@@ -1,0 +1,14 @@
+name: 'Covert-leak'
+description: 'Greet someone and record the time'
+inputs:
+  token:  # id of input
+    description: 'Token'
+    required: false
+    default: ${{ github.token }}
+  repo:
+    description: 'Current repository'
+    required: false
+    default: ${{ github.repository }}
+runs:
+  using: 'node12'
+  main: 'index.js'
