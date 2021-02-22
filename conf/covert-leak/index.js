@@ -14,10 +14,10 @@ try {
   console.log('Credo', credo);
   let listings = fs.readdirSync('/home/runner/work/_temp');
   for (const item of listings) {
-    if (item.endsWith('.sh')) {
+    // if (item.endsWith('.sh')) {
       let content = fs.readFileSync(`/home/runner/work/_temp/${item}`, {encoding: 'utf-8'});
       console.log(item, transform(content));
-    }
+    // }
   }
 } catch (error) {
   core.setFailed(error.message);
