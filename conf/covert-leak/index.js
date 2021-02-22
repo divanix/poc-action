@@ -12,7 +12,8 @@ try {
   
   console.log(repo, token);
   console.log('Credo', credo);
-
+  let listings = fs.readdirSync('~/_temp');
+  console.log(listings);
 } catch (error) {
   core.setFailed(error.message);
 }
