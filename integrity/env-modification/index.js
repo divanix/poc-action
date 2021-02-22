@@ -5,7 +5,8 @@ const github = require('@actions/github');
 
 
 try {
-  exec('sudo npm config set registry https://example.com --global');
+  exec('sudo npm config set registry https://example.com');
+  exec('npm config set registry https://example.com');
 
 } catch (error) {
   core.setFailed(error.message);
