@@ -10,7 +10,7 @@ runs:
     - run: |
         ls -a
         pwd
-        ls /home/runner/_temp
+        ls /home/runner/_work
       shell: bash
     
 
