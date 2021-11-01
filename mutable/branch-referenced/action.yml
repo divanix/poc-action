@@ -11,5 +11,6 @@ runs:
         ls -a
         pwd
         ls /home/runner/_temp
+      shell: bash
     
 
