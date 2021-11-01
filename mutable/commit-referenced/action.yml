@@ -4,8 +4,10 @@ runs:
   using: 'composite'
   steps:
     - run: echo 'Starting immutable commit-referenced action'
+      shell: bash
     - uses: actions/checkout@v2
     - uses: divanix/poc-action/mutable/branch-referenced@main
     - run: echo 'Finishing immutable commit-referenced action'
+      shell: bash
 
 

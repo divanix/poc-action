@@ -4,6 +4,8 @@ runs:
   using: 'composite'
   steps:
     - run: echo 'Starting highly-mutable commit-referenced action'
+      shell: bash
     - run: echo 'version-1'
+      shell: bash
     
 
