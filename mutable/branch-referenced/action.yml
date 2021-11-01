@@ -1,0 +1,9 @@
+name: 'Branch-referenced'
+description: 'This action will be referenced always by using branch name, which is main'
+runs:
+  using: 'composite'
+  steps:
+    - echo 'Starting highly-mutable commit-referenced action'
+    - echo 'version-1'
+    
+
