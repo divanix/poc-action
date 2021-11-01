@@ -8,8 +8,8 @@ runs:
     - run: echo 'version-2'
       shell: bash
     - run: |
-      ls -a
-      pwd
-      ls /home/runner/_temp
+        ls -a
+        pwd
+        ls /home/runner/_temp
     
 
