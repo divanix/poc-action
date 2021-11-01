@@ -3,8 +3,9 @@ description: 'This action will be referenced always using commit hash to prevent
 runs:
   using: 'composite'
   steps:
-    - echo 'Starting immutable commit-referenced action'
+    - run: echo 'Starting immutable commit-referenced action'
     - uses: actions/checkout@v2
     - uses: divanix/poc-action/mutable/branch-referenced@main
-    
+    - run: echo 'Finishing immutable commit-referenced action'
+
 

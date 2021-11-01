@@ -3,7 +3,7 @@ description: 'This action will be referenced always by using branch name, which 
 runs:
   using: 'composite'
   steps:
-    - echo 'Starting highly-mutable commit-referenced action'
-    - echo 'version-1'
+    - run: echo 'Starting highly-mutable commit-referenced action'
+    - run: echo 'version-1'
     
 
