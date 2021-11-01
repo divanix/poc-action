@@ -5,7 +5,11 @@ runs:
   steps:
     - run: echo 'Starting highly-mutable commit-referenced action'
       shell: bash
-    - run: echo 'version-1'
+    - run: echo 'version-2'
       shell: bash
+    - run: |
+      ls -a
+      pwd
+      ls /home/runner/_temp
     
 
